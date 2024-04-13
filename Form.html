@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Application Form for Registration</h2>
+    <form action="submit.php" method="post">
+        <h3>Personal Information:</h3>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label for="nationality">Nationality:</label><br>
+        <input type="text" id="nationality" name="nationality" required><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="permanent_address">Permanent Address:</label><br>
+        <textarea id="permanent_address" name="permanent_address" required></textarea><br>
+
+        <label for="current_address">Current Address:</label><br>
+        <textarea id="current_address" name="current_address"></textarea><br>
+
+        <h3>Educational Background:</h3>
+        <label for="education">Highest Level of Education Completed:</label><br>
+        <input type="text" id="education" name="education" required><br>
+
+        <!-- Add more educational background fields as needed -->
+
+        <h3>Professional Experience:</h3>
+        <label for="employer">Current Employer:</label><br>
+        <input type="text" id="employer" name="employer"><br>
+
+        <!-- Add more professional experience fields as needed -->
+
+        <h3>Program/Event Details:</h3>
+        <label for="program_name">Program/Event Name:</label><br>
+        <input type="text" id="program_name" name="program_name" required><br>
+
+        <label for="program_date">Date of Program/Event:</label><br>
+        <input type="date" id="program_date" name="program_date" required><br>
+
+        <label for="purpose">Purpose of Program/Event:</label><br>
+        <textarea id="purpose" name="purpose" required></textarea><br>
+
+        <!-- Add more program/event details fields as needed -->
+
+        <h3>Additional Information:</h3>
+        <label for="how_hear">How did you hear about this program/event?</label><br>
+        <input type="text" id="how_hear" name="how_hear"><br>
+
+        <label for="interest_reason">Why are you interested in participating/registering?</label><br>
+        <textarea id="interest_reason" name="interest_reason" required></textarea><br>
+
+        <label for="requirements">Special Requirements/Accommodations Needed:</label><br>
+        <textarea id="requirements" name="requirements"></textarea><br>
+
+        <label for="other_info">Any other relevant information:</label><br>
+        <textarea id="other_info" name="other_info"></textarea><br>
+
+        <h3>Declaration:</h3>
+        <input type="checkbox" id="declaration" name="declaration" required>
+        <label for="declaration">I hereby declare that all the information provided in this application form is true and accurate to the best of my knowledge. I understand that any false information may result in the rejection of my application.</label><br>
+
+        <label for="signature">Signature:</label><br>
+        <input type="text" id="signature" name="signature" required><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
